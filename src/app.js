@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 
 //conexion a la BD
 mongosee.connect(process.env.MONGO_URL, {dbName: process.env.MONGO_DB_NAME})
-const db = mongosee.connection
+// const db = mongosee.connection
 
 app.use('/books', router)
 
